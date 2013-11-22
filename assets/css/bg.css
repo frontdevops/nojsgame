@@ -1,0 +1,51 @@
+html {
+    height: 100%;
+    background-color: #222;
+
+    background-image: linear-gradient(180deg, transparent, hsla(30, 10%, 70%, 1) 0), linear-gradient(-45deg, hsla(30, 10%, 70%, 1) 40%, transparent 0), linear-gradient(45deg, hsla(30, 10%, 70%, 1) 40%, transparent 0), linear-gradient(45deg, transparent 40%, hsla(30, 10%, 70%, 1) 0), linear-gradient(-45deg, transparent 40%, hsla(30, 10%, 70%, 1) 0), linear-gradient(hsla(30, 10%, 70%, 1), hsla(30, 10%, 70%, 1)), linear-gradient(45deg, transparent 40%, hsla(30, 10%, 70%, 1) 0), linear-gradient(-45deg, transparent 40%, hsla(30, 10%, 70%, 1) 0), linear-gradient(45deg, transparent 40%, hsla(30, 10%, 70%, 1) 0), linear-gradient(-45deg, transparent 40%, hsla(30, 10%, 70%, 1) 0), linear-gradient(hsla(30, 10%, 70%, 1), hsla(30, 10%, 70%, 1)), linear-gradient(hsla(30, 10%, 70%, 1), hsla(30, 10%, 70%, 1)), linear-gradient(hsla(30, 10%, 70%, 1), hsla(30, 10%, 70%, 1)), linear-gradient(hsla(30, 10%, 70%, 1), hsla(30, 10%, 70%, 1)), linear-gradient(hsla(30, 10%, 70%, 1), hsla(30, 10%, 70%, 1)), linear-gradient(hsla(30, 10%, 70%, 1), hsla(30, 10%, 70%, 1)), linear-gradient(hsla(30, 10%, 70%, 1), hsla(30, 10%, 70%, 1)), linear-gradient(180deg, hsla(10, 60%, 40%, 1), hsla(10, 60%, 40%, 1), hsla(200, 30%, 100%, 1), hsla(200, 30%, 50%, 1), hsla(200, 50%, 70%, 1), hsla(250, 40%, 40%, 1), hsla(250, 20%, 50%, 1), hsla(290, 0%, 30%, 1), hsla(10, 60%, 40%, 1));
+
+    background-position: 50% 100%, calc(50% - 15px) calc(100% - 145px), calc(50% + 15px) calc(100% - 145px), calc(50% - 20px) calc(100% - 140px), calc(50% + 20px) calc(100% - 140px), 50% calc(100% - 135px), calc(50% - 15px) calc(100% - 130px), calc(50% + 15px) calc(100% - 130px), calc(50% - 10px) calc(100% - 120px), calc(50% + 10px) calc(100% - 120px), 50% calc(100% - 70px), calc(50% + 5px) calc(100% - 75px), calc(50% + 20px) calc(100% - 80px), calc(50% + 25px) calc(100% - 79px), calc(50% + 35px) calc(100% - 53px), calc(50% + 35px) calc(100% - 70px), 50% 100%, 0 0;
+
+    background-size: 15px 161px, 30px 20px, 30px 20px, 30px 5px, 30px 5px, 40px 5px, 30px 5px, 30px 5px, 30px 5px, 30px 5px, 25px 30px, 25px 20px, 30px 5px, 3px 7px, 5px 30px, 7px 3px, 2px 185px, 100% 1500%;
+
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat-y;
+
+    -webkit-animation: weather 840s linear infinite;
+    animation: weather 840s linear infinite;
+}
+
+html:after, html:before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+
+html:before {
+    height: 150px;
+    width: 150px;
+    box-shadow: inset 20px -20px 50px hsla(295, 20%, 70%, .5);
+    top: 20%;
+    right: 5%;
+}
+
+html:after {
+    height: 100px;
+    width: 100px;
+    box-shadow: inset 30px -30px 50px hsla(230, 20%, 60%, .5);
+    top: 35%;
+    right: 15%;
+}
+
+@-webkit-keyframes weather {
+    to {
+        background-position: 50% 100%, calc(50% - 15px) calc(100% - 145px), calc(50% + 15px) calc(100% - 145px), calc(50% - 20px) calc(100% - 140px), calc(50% + 20px) calc(100% - 140px), 50% calc(100% - 135px), calc(50% - 15px) calc(100% - 130px), calc(50% + 15px) calc(100% - 130px), calc(50% - 10px) calc(100% - 120px), calc(50% + 10px) calc(100% - 120px), 50% calc(100% - 70px), calc(50% + 5px) calc(100% - 75px), calc(50% + 20px) calc(100% - 80px), calc(50% + 25px) calc(100% - 79px), calc(50% + 35px) calc(100% - 53px), calc(50% + 35px) calc(100% - 70px), 50% 100%, 0 1500%;
+    }
+}
+
+@keyframes weather {
+    to {
+        background-position: 50% 100%, calc(50% - 15px) calc(100% - 145px), calc(50% + 15px) calc(100% - 145px), calc(50% - 20px) calc(100% - 140px), calc(50% + 20px) calc(100% - 140px), 50% calc(100% - 135px), calc(50% - 15px) calc(100% - 130px), calc(50% + 15px) calc(100% - 130px), calc(50% - 10px) calc(100% - 120px), calc(50% + 10px) calc(100% - 120px), 50% calc(100% - 70px), calc(50% + 5px) calc(100% - 75px), calc(50% + 20px) calc(100% - 80px), calc(50% + 25px) calc(100% - 79px), calc(50% + 35px) calc(100% - 53px), calc(50% + 35px) calc(100% - 70px), 50% 100%, 0 1500%;
+    }
+}
