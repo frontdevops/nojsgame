@@ -16,6 +16,6 @@ http://youtu.be/AFU-yK8A6Xc
 
 Game and code in fiddles:
 
-http://codepen.io/frontdevops/pen/mFLCw
+https://codepen.io/i0z/pen/AwYbda
 
 GitHub repo: https://github.com/frontdevops/nojsgame
